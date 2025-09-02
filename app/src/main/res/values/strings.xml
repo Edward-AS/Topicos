@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">helloWorld</string>
-    <string name="hint_email">nombre@sgmail.com</string>
+    <string name="hint_email">nombre@gmail.com</string>
     <string name="hint_number">000-000-0000</string>
     <string name="hint_date">dd-mm-aaaa</string>
     <string name="hint_control">00000000</string>
