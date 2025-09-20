@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ejercicioCuatro</string>
+    <string name="btn_limpiar">Limpiar</string>
+    <string name="btn_llenar">Llenar</string>
+</resources>
