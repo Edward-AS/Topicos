@@ -3,13 +3,16 @@ package com.example.ejerciciosiete
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
-    lateinit var btnPagina2: Button
+    lateinit var btnAceptar: Button
+    lateinit var nombre: TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -19,11 +22,18 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        btnPagina2 = findViewById(R.id.btnPagSig)
+        btnAceptar = findViewById(R.id.btnAceptar)
+        nombre = findViewById(R.id.nombre)
 
-        btnPagina2.setOnClickListener {
-            val intent = Intent(this, ventana2::class.java)
-            startActivity(intent)
+        btnAceptar.setOnClickListener {
+            if (nombre.text.toString() != "") {
+                val intent = Intent(this, Ventana2::class.java)
+                intent.putExtra("saludoNombre", nombre.text.toString())
+                startActivity(intent)
+            }
+            else {
+                Toast.makeText(this, "Ingrese su nombre", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 }

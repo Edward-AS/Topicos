@@ -1,15 +1,16 @@
 package com.example.ejerciciosiete
 
-import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class ventana2 : AppCompatActivity() {
+class Ventana2 : AppCompatActivity() {
     lateinit var btnRegresar: Button
+    lateinit var saludo: TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -20,10 +21,16 @@ class ventana2 : AppCompatActivity() {
             insets
         }
         btnRegresar = findViewById(R.id.btnRegresar)
+        saludo = findViewById(R.id.saludo)
+
+        var nombre = intent.getStringExtra("saludoNombre")
+
+        nombre = "Hola $nombre, cómo estás?"
+
+        saludo.text = nombre
 
         btnRegresar.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
+            finish()
         }
     }
 }

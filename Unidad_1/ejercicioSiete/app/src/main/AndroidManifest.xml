@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EjercicioSiete">
         <activity
-            android:name=".ventana2"
+            android:name=".Ventana2"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
