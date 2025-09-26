@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnEjercicio1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="ejercicio1"
+        android:text="Ejercicio 1"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.184"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.113" />
+
+    <Button
+        android:id="@+id/btnEjercicio2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="ejercicio2"
+        android:text="Ejercicio 2"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnEjercicio1"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.112" />
+
+    <Button
+        android:id="@+id/btnEjercicio3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="ejercicio3"
+        android:text="Ejercicio 3"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnEjercicio2"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEjercicio1"
+        app:layout_constraintVertical_bias="0.126" />
+
+    <Button
+        android:id="@+id/btnEjercicio4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="ejercicio4"
+        android:text="Ejercicio 4"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnEjercicio3"
+        app:layout_constraintTop_toBottomOf="@+id/btnEjercicio2"
+        app:layout_constraintVertical_bias="0.126" />
+
+    <Button
+        android:id="@+id/btnEjercicio5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="ejercicio5"
+        android:text="Ejercicio 5"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnEjercicio4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEjercicio3"
+        app:layout_constraintVertical_bias="0.167" />
+
+    <Button
+        android:id="@+id/btnEjercicio6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="ejercicio6"
+        android:text="Ejercicio 6"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnEjercicio5"
+        app:layout_constraintTop_toBottomOf="@+id/btnEjercicio4"
+        app:layout_constraintVertical_bias="0.167" />
+
+    <Button
+        android:id="@+id/btnEjercicio7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="ejercicio7"
+        android:text="Ejercicio 7"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.686" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menú de apps"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.12" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

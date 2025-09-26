@@ -52,7 +52,6 @@ class MainActivity : AppCompatActivity() {
     fun getNum(){
         val valUnoText = valorUno.text.toString()
         val valDosText = valorDos.text.toString()
-        // Esepción si no se coloca un número y al inicio que están vacíos
         if (valUnoText.toDoubleOrNull() != null && valDosText.toDoubleOrNull() != null) {
             val1 = valUnoText.toDouble()
             val2 = valDosText.toDouble()
