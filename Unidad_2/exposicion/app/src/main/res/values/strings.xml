@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Pasos y Clima</string>
+
+    <!-- Pasos -->
+    <string name="steps_label">Pasos hoy</string>
+    <string name="steps_detail">Conteo de pasos usando el sensor del dispositivo</string>
+
+    <!-- Clima -->
+    <string name="refresh_weather">Actualizar</string>
+    <string name="weather_icon_desc">Icono del clima</string>
+
+    <!-- Consejo -->
+    <string name="advice_placeholder">Aquí aparecerá un consejo según el clima y tu actividad.</string>
+
+    <!-- Mensajes -->
+    <string name="location_not_available">Ubicación no disponible</string>
+    <string name="network_error">Error de red</string>
+</resources>
